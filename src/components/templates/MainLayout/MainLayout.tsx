@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ReactNode } from 'react';
 
 import { cn } from '@/lib/utils';
+import { Navbar } from '@/components/navbar';
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -10,8 +11,6 @@ interface MainLayoutProps {
 
 const links = [{ slug: '/', label: 'RelevanceAI' }];
 
-// This is the place responsible for wrapping your app.
-// Add here components like Footer, Nav etc.
 export const MainLayout = ({ children, className }: MainLayoutProps) => {
   const wrapperStyles = cn('flex flex-col min-h-screen', className);
 
@@ -28,7 +27,10 @@ export const MainLayout = ({ children, className }: MainLayoutProps) => {
           ))}
         </ul>
       </header>
-      <main className="flex-1">{children}</main>
+      <div className="min-h-screen p-4 bg-slate-100">
+        <Navbar />
+        {children}
+      </div>
       <footer className="flex items-center justify-center p-4">
         © Avinash Adluri Copyright 2024
       </footer>

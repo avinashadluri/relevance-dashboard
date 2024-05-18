@@ -1,6 +1,6 @@
 import { render, screen } from '@/tests/test-utils';
 
-import { Example } from '.';
+import { Example } from '@/components/example/example';
 
 describe('Example', () => {
   it('should render the heading', () => {
