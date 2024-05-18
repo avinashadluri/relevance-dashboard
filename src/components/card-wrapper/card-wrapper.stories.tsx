@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { CardWrapper } from '@/components/card-wrapper';
 import { MainProvider } from '@/components/providers/MainProvider';
 
-const ActiveTasksChartWrapper: React.FC = () => {
+export const ActiveTasksChartWrapper: React.FC = () => {
   return (
     <MainProvider>
       <CardWrapper

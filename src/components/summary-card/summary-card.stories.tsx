@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { SummaryCard } from '@/components/summary-card';
 import { MainProvider } from '@/components/providers/MainProvider';
 
-const SummaryCardWrapper: React.FC = () => {
+export const SummaryCardWrapper: React.FC = () => {
   return (
     <MainProvider>
       <SummaryCard />

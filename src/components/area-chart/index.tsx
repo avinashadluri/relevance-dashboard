@@ -5,17 +5,19 @@ export const AreaChartSeries: React.FC<{
   colors: Array<string>;
 }> = ({ data, colors }) => {
   return (
-    <AreaChart
-      className="h-40"
-      data={data}
-      index="date"
-      categories={['value']}
-      colors={colors}
-      yAxisWidth={60}
-      showGridLines={false}
-      showXAxis={false}
-      showLegend={false}
-      showYAxis={false}
-    />
+    <div className="testing">
+      <AreaChart
+        className="h-40"
+        data={data}
+        index="date"
+        categories={['value']}
+        colors={colors}
+        yAxisWidth={60}
+        showGridLines={false}
+        showXAxis={false}
+        showLegend={false}
+        showYAxis={false}
+      />
+    </div>
   );
 };

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ActiveTasksChart } from '@/components/active-task-chart';
 import { MainProvider } from '@/components/providers/MainProvider';
 
-const ActiveTasksChartWrapper: React.FC = () => {
+export const ActiveTasksChartWrapper: React.FC = () => {
   return (
     <MainProvider>
       <ActiveTasksChart
