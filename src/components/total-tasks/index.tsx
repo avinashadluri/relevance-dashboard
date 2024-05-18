@@ -3,6 +3,7 @@ import { BarChart } from '@tremor/react';
 export const TotalTasksChart: React.FC<{
   data: Array<{ date: string; value: number }>;
 }> = ({ data }) => {
+  console.log(data);
   return (
     <BarChart
       data={data}

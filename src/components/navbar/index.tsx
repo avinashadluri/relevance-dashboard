@@ -2,6 +2,7 @@
 
 import { RiCalendarScheduleLine, RiArrowDropDownLine } from '@remixicon/react';
 import { Icon } from '@tremor/react';
+
 export const Navbar: React.FC = () => {
   return (
     <nav className="bg-transparent flex justify-between items-center p-4">
