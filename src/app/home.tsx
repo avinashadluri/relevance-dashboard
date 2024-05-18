@@ -65,18 +65,13 @@ type pageDataProps = {
   selectedFilter2Value: number;
   chart_data: {
     total_tasks_series: Array<{ date: string; value: number }>;
-    active_tasks_series: Array<{ date: string; value: any }>;
+    active_tasks_series: Array<{ date: string; value: number }>;
     labelled_tasks_series: Array<{ date: string; value: number }>;
     pending_approvals_series: Array<{ date: string; value: number }>;
     filter1_series: Array<{ date: string; value: number }>;
     filter2_series: Array<{ date: string; value: number }>;
   };
 };
-
-interface Option {
-  id: number;
-  label: string;
-}
 
 const Home: React.FC = () => {
   const [dateRange, setDateRange] = useState({

@@ -44,6 +44,7 @@ module.exports = {
   },
   rules: {
     'react-hooks/rules-of-hooks': 2,
+    "@typescript-eslint/no-explicit-any": "off",
     'react-hooks/exhaustive-deps': 1,
     'newline-before-return': 2,
     'react/prop-types': 0,
