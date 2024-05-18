@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect } from 'react';
-import mainData from '@/data/analytics';
+import mainData from '../../../data/analytics';
 
 type MyContextValue = {
   dateRangeStart: string;
