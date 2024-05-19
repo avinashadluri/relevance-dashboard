@@ -1,12 +1,14 @@
-import { FC } from 'react';
-import { useMyContext } from '@/components/providers/MainProvider';
-import { Card } from '@tremor/react';
-import { DateRangeSummary } from '@/components/date-range';
-import { Icon, Badge } from '@tremor/react';
 import { RiShapesFill, RiBookletFill, RiPriceTag2Fill } from '@remixicon/react';
+import { Card } from '@tremor/react';
+import { Icon, Badge } from '@tremor/react';
+import { FC } from 'react';
+
+import { DateRangeSummary } from '@/components/date-range';
+import { useMyContext } from '@/components/providers/MainProvider';
 
 export const SummaryCard: FC = () => {
   const pageData = useMyContext();
+
   return (
     <Card>
       <div className="flex items-center p-2 bg-white rounded">

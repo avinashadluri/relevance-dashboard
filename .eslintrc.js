@@ -9,20 +9,8 @@ module.exports = {
     'plugin:storybook/recommended',
     'prettier'
   ],
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'react-hooks',
-    'eslint-plugin-import-helpers',
-    'testing-library'
-  ],
-  overrides: [
-    // Only uses Testing Library lint rules in test files
-    {
-      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:testing-library/react']
-    }
-  ],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'eslint-plugin-import-helpers'],
+
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -44,7 +32,7 @@ module.exports = {
   },
   rules: {
     'react-hooks/rules-of-hooks': 2,
-    "@typescript-eslint/no-explicit-any": "off",
+    '@typescript-eslint/no-explicit-any': 'off',
     'react-hooks/exhaustive-deps': 1,
     'newline-before-return': 2,
     'react/prop-types': 0,

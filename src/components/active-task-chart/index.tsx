@@ -1,10 +1,12 @@
 import { DonutChart, Legend } from '@tremor/react';
+
 import { useMyContext } from '@/components/providers/MainProvider';
 
 export const ActiveTasksChart: React.FC<{
   data: Array<{ date: string; value: number }>;
 }> = ({ data }) => {
   const pageData = useMyContext();
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
       <DonutChart

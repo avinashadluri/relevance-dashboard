@@ -1,9 +1,10 @@
-import { FC } from 'react';
+import { RiFilterLine, RiCheckDoubleLine } from '@remixicon/react';
 import { Card } from '@tremor/react';
+import { Icon } from '@tremor/react';
+import { FC } from 'react';
+
 import { DateRangeSummary } from '@/components/date-range';
 import { useMyContext } from '@/components/providers/MainProvider';
-import { Icon } from '@tremor/react';
-import { RiFilterLine, RiCheckDoubleLine } from '@remixicon/react';
 
 export const CardWrapper: FC<{
   showFilter?: boolean;

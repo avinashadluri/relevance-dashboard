@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect } from 'react';
+
 import mainData from '../../../data/analytics';
 
 type MyContextValue = {
@@ -198,5 +199,6 @@ export const useMyContext = () => {
   if (!context) {
     throw new Error('useMyContext must be used inside a MainProvider');
   }
+
   return context;
 };

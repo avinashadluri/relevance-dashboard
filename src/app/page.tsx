@@ -1,11 +1,11 @@
 'use client';
-import { useMyContext } from '@/components/providers/MainProvider';
+import { ActiveTasksChart } from '@/components/active-task-chart';
+import { AreaChartSeries } from '@/components/area-chart';
 import { CardWrapper } from '@/components/card-wrapper';
+import { LabelTaskChart } from '@/components/label-task-chart';
+import { useMyContext } from '@/components/providers/MainProvider';
 import { SummaryCard } from '@/components/summary-card';
 import { TotalTasksChart } from '@/components/total-tasks';
-import { AreaChartSeries } from '@/components/area-chart';
-import { LabelTaskChart } from '@/components/label-task-chart';
-import { ActiveTasksChart } from '@/components/active-task-chart';
 
 const Page: React.FC = () => {
   const pageData = useMyContext();

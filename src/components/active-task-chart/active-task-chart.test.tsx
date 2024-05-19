@@ -1,4 +1,5 @@
 import { render } from '@/tests/test-utils';
+
 import '@testing-library/jest-dom';
 import { ActiveTasksChartWrapper } from './active-task-chart.stories';
 
